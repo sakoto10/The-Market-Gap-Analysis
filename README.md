@@ -108,7 +108,16 @@ Please edit this `README.md` file in your forked repository to include the follo
 
 ### C. Technical Explanation
 * Briefly explain how you handled the "Data Cleaning".
+   * The raw Open Food Facts CSV is ~3 GB and ~4M rows, so it is never loaded whole. The notebook streams it in 250K-row chunks, keeping only snack-aisle rows (matched on category keywords) and the 12 columns needed — a "specific categories" subset, which is more meaningful than an arbitrary first-500K-rows slice. Cleaning then:
+
+      *   **Drops** rows missing `product_name`, `sugars_100g`, `proteins_100g` — imputing nutrition would fabricate the very gap we're measuring.
+      *   **Removes biologically impossible values:** every *`_100g` nutrient must lie in **[0, 100] g**; energy is capped at **900                kcal/100g** (the pure-fat ceiling); sugar cannot exceed carbohydrates; and the macro sum cannot exceed **~105 g per              100 g**.
+      *   **De-duplicates** on product `code`.
+
+   * This retained **399,621** of **628,232** snack rows (**63.6%**). Categories were built by parsing the comma-separated          `categories_tags`, stripping language prefixes (`en:`), and assigning one **Primary Category** via a prioritised keyword             ruleset, producing **9 readable buckets**.
+
 * Explain your "Candidate's Choice" addition.
+   *  I added a check that the recommended low-sugar / high-protein cluster is not a fake-healthy product that compensates with fat or salt — a classic reformulation trap. The check compares the target cluster against the average snack and found it is actually cleaner: fat **7.1 g** vs **11.0 g**, salt **0.11 g** vs **0.26 g**, and fiber **6.3 g** vs **3.2 g**. This de-risks the recommendation and shows the opportunity also satisfies the client's stated "High Fiber" demand.
 
 **Important Note on Code Submission:**
 * Upload your `.ipynb` notebook file to the repo.
