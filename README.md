@@ -104,8 +104,7 @@ Please edit this `README.md` file in your forked repository to include the follo
 ### B. Project Links
 * **Link to Notebook:** [Here](https://colab.research.google.com/drive/19v-49C3EMil5t_85rbBbnEkGgDfF2-xW?usp=sharing)
 * **Link to Dashboard:** [Here](https://app.powerbi.com/view?r=eyJrIjoiNWRiMmU0MjktMzE5Yi00YWY3LThjNDEtMTg4OGE5OTI5YTdmIiwidCI6ImZkY2E1Y2RlLTA0MTEtNGE3Ni1hMTdhLTM2MTM4NGU5ZmQ3NCJ9).
-* **Link to Presentation:** A link to a short slide deck (PDF, PPT) AND (Optional) a 2-minute video walkthrough (YouTube) explaining your results.
-
+* **Link to Presentation:** [Here](https://docs.google.com/presentation/d/1DAI2lzg5pes8LWoRjBfmjpCnUVjBiqQ3nINfwtjL7E4/edit?usp=sharing)
 ### C. Technical Explanation
 * Briefly explain how you handled the "Data Cleaning".
    * The raw Open Food Facts CSV is ~3 GB and ~4M rows, so it is never loaded whole. The notebook streams it in 250K-row chunks, keeping only snack-aisle rows (matched on category keywords) and the 12 columns needed — a "specific categories" subset, which is more meaningful than an arbitrary first-500K-rows slice. Cleaning then:
