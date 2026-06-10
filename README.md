@@ -68,7 +68,7 @@ You have the flexibility to choose your development environment:
 
 * **Acceptance Criteria:**
     * On the dashboard, include a "Key Insight" box.
-    * Complete this sentence: *"Based on the data, the biggest market opportunity is in [Category Name], specifically targeting products with [X]g of protein and less than [Y]g of sugar."*
+    * Complete this sentence: *"Based on the data, the biggest market opportunity is in Chocolate & Confectionery, specifically targeting products with 7g of protein and less than 5g of sugar."*
 
 ---
 
@@ -99,11 +99,11 @@ You have the flexibility to choose your development environment:
 Please edit this `README.md` file in your forked repository to include the following three sections at the top:
 
 ### A. The Executive Summary
-* A 3-5 sentence summary of your findings.
+I analysed **628,232 (~628K)** snack products from **Open Food Facts** and cleaned them down to **399,621 (~400K)** trustworthy records to map the trade-off between sugar and protein across the snack aisle. The market is firmly stuck in a Sugar Trap: **51.5%** of all snacks are **high-sugar / low-protein**, and the small healthy slice is concentrated almost entirely in nuts. The clearest Blue Ocean is **Chocolate & Confectionery** — the single largest category (**75,419 (~75K)** products) averaging **40.6 g of sugar per 100 g**, yet only **2%** offer a high-protein / low-sugar profile. I therefore recommend developing a chocolate/confectionery product targeting **7 g of protein per 100 g and under 5 g of sugar**. Encouragingly, products already in this healthy quadrant are not a "*fat trap*" — they carry less fat and salt and nearly double the fiber of the average snack, so the opportunity is genuinely healthy rather than a marketing mirage.
 
 ### B. Project Links
-* **Link to Notebook:** (e.g., Google Colab, etc.). *Ensure sharing permissions are set to "Anyone with the link can view".*
-* **Link to Dashboard:** (e.g., Tableau Public / Power BI Web, etc.).
+* **Link to Notebook:** [Here](https://colab.research.google.com/drive/19v-49C3EMil5t_85rbBbnEkGgDfF2-xW?usp=sharing)
+* **Link to Dashboard:** [Here](https://app.powerbi.com/view?r=eyJrIjoiNWRiMmU0MjktMzE5Yi00YWY3LThjNDEtMTg4OGE5OTI5YTdmIiwidCI6ImZkY2E1Y2RlLTA0MTEtNGE3Ni1hMTdhLTM2MTM4NGU5ZmQ3NCJ9).
 * **Link to Presentation:** A link to a short slide deck (PDF, PPT) AND (Optional) a 2-minute video walkthrough (YouTube) explaining your results.
 
 ### C. Technical Explanation
