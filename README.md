@@ -68,7 +68,7 @@ You have the flexibility to choose your development environment:
 
 * **Acceptance Criteria:**
     * On the dashboard, include a "Key Insight" box.
-    * Complete this sentence: *"Based on the data, the biggest market opportunity is in [Category Name], specifically targeting products with [X]g of protein and less than [Y]g of sugar."*
+    * Complete this sentence: *"Based on the data, the biggest market opportunity is in **Chocolate & Confectionery**, specifically targeting products with **7g** of protein and less than **5g** of sugar."*
 
 ---
 
