@@ -99,7 +99,7 @@ You have the flexibility to choose your development environment:
 Please edit this `README.md` file in your forked repository to include the following three sections at the top:
 
 ### A. The Executive Summary
-* A 3-5 sentence summary of your findings.
+* I analysed **628,232 (~628K)** snack products from **Open Food Facts** and cleaned them down to **399,621 (~400K)** trustworthy records to map the trade-off between sugar and protein across the snack aisle. The market is firmly stuck in a Sugar Trap: **51.5%** of all snacks are **high-sugar / low-protein**, and the small healthy slice is concentrated almost entirely in nuts. The clearest Blue Ocean is **Chocolate & Confectionery** — the single largest category (**75,419 (~75K)** products) averaging **40.6 g of sugar per 100 g**, yet only **2%** offer a high-protein / low-sugar profile. I therefore recommend developing a chocolate/confectionery product targeting **7 g of protein per 100 g and under 5 g of sugar**. Encouragingly, products already in this healthy quadrant are not a "*fat trap*" — they carry less fat and salt and nearly double the fiber of the average snack, so the opportunity is genuinely healthy rather than a marketing mirage.
 
 ### B. Project Links
 * **Link to Notebook:** (e.g., Google Colab, etc.). *Ensure sharing permissions are set to "Anyone with the link can view".*
